@@ -1,0 +1,17 @@
+//Get segment Width
+env(viewport-segment-width <x> <y>);
+
+//Get segment Height
+env(viewport-segment-height <x> <y>);
+
+//Get position for top 
+env(viewport-segment-top <x> <y>);
+
+//Get position for left
+env(viewport-segment-left <x> <y>);
+
+//Get position for bottom
+env(viewport-segment-bottom <x> <y>);
+
+//Get position for right
+env(viewport-segment-right <x> <y>);

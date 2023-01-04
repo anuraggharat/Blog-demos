@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Screen APIs.</title>
+
+</head>
+
+<body>
+
+    <h1>JavaScript's Viewport segment API for Dual Screen devices</h1>
+
+</body>
+
+</html>
+    <script>
+
+        let screens;
+
+        // runs everytime the user resizes the window
+        window.addEventListener('resize', () => {
+            screens = window.visualViewport.segments;
+            //to check if screens array is null(If null it means its a single screen device)
+            if (screens) {
+                console.log(screens.length);
+            }
+            else {
+                console.log("Opened in Single Screen mode")
+            }
+        });
+
+    </script>

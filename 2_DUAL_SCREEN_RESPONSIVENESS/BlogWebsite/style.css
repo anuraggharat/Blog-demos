@@ -64,7 +64,6 @@ h1{
     h1 {
         font-size: 3rem;
     }
-
 }
 
 /* Media queries for double portrait mode: ( Dual Screen Book mode) */
@@ -77,13 +76,11 @@ h1{
         min-width:env(viewport-segment-width 0 0);
         padding: 1rem;
         min-height:env(viewport-segment-height 0 0) ;
-        overflow: hidden;
     }
     article{
         margin-left: calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0));        
         width: env(viewport-segment-width 0 1);
         padding: 1rem;
-        overflow: scroll;
     }
     .row {
         display: flex;
