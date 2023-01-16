@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #111927;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.circle-1 {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    background: #4776E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    opacity: .75;
+    animation: bounce 4s linear infinite 2s;
+}
+.circle-2{
+    position: absolute;
+    bottom: 5%;
+    right: 35%;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    opacity: .75;
+    animation: bounce 4s linear infinite;
+}
+.circle-3 {
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    background-color: #FF3CAC;
+    background: #ff9966;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    opacity: .75;
+    animation: bounce 4s linear infinite 1s;
+}
+.card {
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+}
+.card>i {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 2.5rem;
+}
+.card>div>p {
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-top: 10px;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card>p {
+    position: absolute;
+    bottom: 10%;
+    fill: #fff;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card>div>h1 {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.card {
+    background: rgba(0, 35, 82, 0.1);
+}
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}

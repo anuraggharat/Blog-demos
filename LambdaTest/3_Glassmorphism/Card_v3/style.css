@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-family: 'Noto Sans', sans-serif;
+background: #396afc;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card {
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+}
+.card>i {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 2.5rem;
+}
+.card>div>p {
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-top: 10px;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card>p {
+    position: absolute;
+    bottom: 10%;
+    fill: #fff;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card>div>h1 {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
