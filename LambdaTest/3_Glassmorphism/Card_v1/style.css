@@ -123,6 +123,15 @@ section {
     background: rgba(0, 35, 82, 0.1);
 }
 
+.circle-1{
+        animation: bounce 4s linear infinite;
+}
+.circle-2{
+    animation: bounce 4s linear infinite 1s;
+}
+.circle-3 {
+    animation: bounce 4s linear infinite 2s;
+}
 @keyframes bounce {
 
     0% {
